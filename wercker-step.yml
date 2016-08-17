@@ -1,5 +1,5 @@
 name: ghp-import
-version: 0.1.0
+version: 0.1.1
 description: |
     Run ghp-import (https://pypi.python.org/pypi/ghp-import) to import a document.
 properties:
@@ -18,10 +18,3 @@ properties:
     type: string
     default: "gh-pages"
     required: false
-
-
-  #     -n          Include a .nojekyll file in the branch.
-  # -m MESG     The commit message to use on the target branch.
-  # -p          Push the branch to origin/{branch} after committing.
-  # -r REMOTE   The name of the remote to push to. [origin]
-  # -b BRANCH   Name of the branch to write to. [gh-pages]
