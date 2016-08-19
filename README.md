@@ -15,4 +15,4 @@ Options
 
 License
 =========
-This software is released under the MIT License, see [LICENSE](LICENSE).
+This software is released under the MIT License, see [LICENSE](https://github.com/jkawamoto/wercker-ghp-import-step/blob/master/LICENSE).
