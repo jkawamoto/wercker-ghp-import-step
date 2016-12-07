@@ -1,5 +1,5 @@
 name: ghp-import
-version: 1.0.0
+version: 2.0.0
 description: |
     Run ghp-import (https://pypi.python.org/pypi/ghp-import) to import a document.
 keywords:
@@ -22,4 +22,8 @@ properties:
   branch:
     type: string
     default: "gh-pages"
+    required: false
+  baseurl:
+    type: string
+    default: ""
     required: false

@@ -9,9 +9,10 @@ Options
 - token: [Github Personal access tokens](https://github.com/settings/tokens)
   with `public_repo` score for public repository or otherwise `repo` scope.
   **Use a protected environment variable.**
-- basedie: Directory path to the document root.
+- basedir: Directory path to the document root.
 - msg: Optional commit message.
-- branch: Branch name to be pushed. Defualt is `gh-pages`.
+- branch: Branch name to be pushed. (Default: `gh-pages`)
+- baseurl: If set, `sitemap.xml` will be generated based on the given base URL.
 
 License
 =========
