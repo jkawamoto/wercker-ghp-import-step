@@ -22,7 +22,8 @@ if [ -n "$WERCKER_GHP_IMPORT_BASEURL" ]; then
   sitemap-gen $WERCKER_GHP_IMPORT_BASEURL
 
   info "Commiting."
-  git commit -a -m "Import sitemap.xml."
+  git add sitemap.xml
+  git commit -m "Import sitemap.xml."
 fi
 
 REPOSITORY=${WERCKER_GIT_OWNER}/${WERCKER_GIT_REPOSITORY}
