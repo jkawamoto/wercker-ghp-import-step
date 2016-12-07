@@ -19,7 +19,7 @@ if [ -n "$WERCKER_GHP_IMPORT_BASEURL" ]; then
   pip install --upgrade -e git+https://github.com/jkawamoto/sitemap-gen#egg=sitemap-gen
 
   info "Generating a sitemap."
-  sitemap-gen $WERCKER_GHP_IMPORT_BASEURL
+  sitemap-gen --tracked-files $WERCKER_GHP_IMPORT_BASEURL
 
   info "Commiting."
   git add sitemap.xml
