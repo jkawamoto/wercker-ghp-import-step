@@ -4,7 +4,7 @@ if [ -n "$WERCKER_GHP_IMPORT_MSG" ]; then
 fi
 
 info "Installing ghp-import."
-pip install --upgrade ghp-import
+pip install --upgrade ghp-import==0.4.1
 
 info "Importing a document."
 git config user.email "pleasemailus@wercker.com"
