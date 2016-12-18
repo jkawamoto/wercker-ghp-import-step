@@ -9,6 +9,7 @@ pip install --upgrade ghp-import
 info "Importing a document."
 git config user.email "pleasemailus@wercker.com"
 git config user.name "werckerbot"
+echo "ghp-import -n $WERCKER_GHP_IMPORT_MSG -b $WERCKER_GHP_IMPORT_BRANCH $WERCKER_GHP_IMPORT_BASEDIR"
 ghp-import -n $WERCKER_GHP_IMPORT_MSG -b $WERCKER_GHP_IMPORT_BRANCH $WERCKER_GHP_IMPORT_BASEDIR
 
 if [ -n "$WERCKER_GHP_IMPORT_BASEURL" ]; then
