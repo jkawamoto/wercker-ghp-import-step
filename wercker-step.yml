@@ -1,5 +1,5 @@
 name: ghp-import
-version: 2.0.6
+version: 2.0.7
 description: |
     Run ghp-import (https://pypi.python.org/pypi/ghp-import) to import a document.
 keywords:
