@@ -24,7 +24,7 @@
 
 # This script installs and runs ghp-import to store document in gh-pages.
 if [[ -n "$WERCKER_GHP_IMPORT_MSG" ]]; then
-  WERCKER_GHP_IMPORT_MSG="-m \"${WERCKER_GHP_IMPORT_MSG}\""
+  WERCKER_GHP_IMPORT_MSG="-m '${WERCKER_GHP_IMPORT_MSG}'"
 fi
 
 info 'Installing ghp-import.'
