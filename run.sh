@@ -34,7 +34,7 @@ info 'Importing a document.'
 git config user.email 'pleasemailus@wercker.com'
 git config user.name 'werckerbot'
 info "ghp-import -n $WERCKER_GHP_IMPORT_MSG -b $WERCKER_GHP_IMPORT_BRANCH $WERCKER_GHP_IMPORT_BASEDIR"
-ghp-import $WERCKER_GHP_IMPORT_BASEDIR -n $WERCKER_GHP_IMPORT_MSG -b $WERCKER_GHP_IMPORT_BRANCH 
+sh -c "ghp-import -n $WERCKER_GHP_IMPORT_MSG -b $WERCKER_GHP_IMPORT_BRANCH $WERCKER_GHP_IMPORT_BASEDIR"
 
 if [[ -n "$WERCKER_GHP_IMPORT_BASEURL" ]]; then
   info "Checking out $WERCKER_GHP_IMPORT_BRANCH."
